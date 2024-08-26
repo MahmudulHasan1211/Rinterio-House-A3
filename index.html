@@ -9,7 +9,6 @@
     <!-- daisy setup -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 
-
     <!-- tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -43,52 +42,48 @@
 
 <body class="manrope-house">
 
-    <header>
-        <nav class="container mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] p-2"></i>
-                    <a class="btn btn-ghost text-2xl sm:text-xl font-[#212121]">Rinterio</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+    <header class="container mx-auto">
+        <nav class="navbar bg-base-100 flex justify-between items-center">
+            <div class="navbar-start flex items-center">
+                <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] p-2"></i>
+                <a class="btn btn-ghost text-2xl sm:text-xl font-[#212121]">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold">Home</a></li>
+                    <li>
+                        <summary>Services</summary>
+                    </li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end flex items-center">
+                <i class="fa-solid fa-magnifying-glass rounded-full bg-[#FFFFFF] p-2 m-2 hidden sm:block"></i>
+                <i class="fa-solid fa-cart-shopping rounded-full text-g-500 bg-[#FFFFFF] p-2 m-2 hidden sm:block"></i>
+                <a class="btn text-black rounded-full bg-[#ABEF5F] hidden sm:block flex items-center px-4 py-2">
+                    Book Consult
+                    <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#1C1C1C] text-white p-2 ml-2"></i>
+                </a>
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="right-0 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a class="font-bold">Home</a></li>
-                        <li>
-
-                            <summary>Services</summary>
-                        </li>
+                        <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass rounded-full bg-[#FFFFFF] p-2 m-2 hidden sm:block"></i>
-                    <i class="fa-solid fa-cart-shopping rounded-full text-g-500 bg-[#FFFFFF] p-2 m-2 hidden sm:block"></i>
-                    <a class="btn text-black rounded-full bg-[#ABEF5F]">Book Consult<i
-                            class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#1C1C1C] text-white p-2"></i>
-                    </a>
-                    <div class="navbar bg-base-100">
-                        <div class="navbar-start">
-                            <div class="dropdown">
-                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M4 6h16M4 12h8m-8 6h16" />
-                                    </svg>
-                                </div>
-                                <ul tabindex="0"
-                                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                    <li><a class="font-bold">Home</a></li>
-                                    <li><a>Services</a></li>
-                                    <li><a>Portfolio</a></li>
-                                    <li><a>Blogs</a></li>
-                                    <li><a>Contact Us</a></li>
-
-                            </div>
-                        </div>
-                    </div>
+            </div>
         </nav>
     </header>
 

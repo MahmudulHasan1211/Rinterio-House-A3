@@ -27,6 +27,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        bgcolor: '#F4F4F4',
                     }
                 }
             }
@@ -42,8 +43,8 @@
 
 <body class="manrope-house">
 
-    <header class="container mx-auto">
-        <nav class="navbar bg-base-100 flex justify-between items-center">
+    <header class="container mx-auto bg-gradient-to-b from-bgcolor to-white">
+        <nav class="navbar bg-base-100 flex justify-between items-center ">
             <div class="navbar-start flex items-center">
                 <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-[#ABEF5F] p-2"></i>
                 <a class="btn btn-ghost text-2xl sm:text-xl font-[#212121]">Rinterio</a>
@@ -102,50 +103,58 @@
 
     <main>
         <section class="bg-[#F4F4F4] mt-20">
-         <div class="flex pt-20">
-
-          
-            <div>
-
+            <div class="flex flex-col sm:flex-row pt-20">
+                <div class="flex-1">
             
-            <div class="p-20">
-                
-                <a class="btn text-black rounded-full bg-[#FFFFFF] inline-flex items-center px-4 py-2">                    <i class="fa-solid fa-arrow-right  rounded-full text-black p-2 "></i>
-                    About Us
-                </a>
+                    <div class="p-10 sm:p-20">
+                        <div class="flex flex-col items-center text-center sm:text-left sm:items-start sm:flex-col">
+                            <div class="sm:w-full">
+                                <a class="btn text-black rounded-full bg-[#FFFFFF] inline-flex items-center px-4 py-2 mx-auto sm:mx-0">
+                                    <i class="fa-solid fa-arrow-right rounded-full text-black p-2"></i>
+                                    About Us
+                                </a>
+                                <h1 class="font-bold text-2xl sm:text-4xl py-5">
+                                    We design thoughtful, <br> liveable spaces
+                                </h1>
+                                <p class="text-sm sm:text-base">
+                                    The barn house captivates with its blend of rustic charm and <br>
+                                    modern sophistication, featuring weathered wood, sleek metal accents.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="bg-[#FFFFFF] flex my-10 w-4/6 ml-0 lg:ml-20">
+                        <div>
+                            <img class="pt-3" src="./assets/commercial.png" alt="">
+                        </div>
+                        <div class="pl-6">
+                            <h1 class="font-bold pt-4">Commercial</h1>
+                            <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+                    </div>
 
-            <h1 class="font-bold text-4xl py-5">We design thoughtful, <br> liveable spaces</h1>
-            <p>The barn house captivates with its blend of rustic charm and <br> 
-                modern sophistication, featuring weathered wood, sleek metal accents.</p>
-            </div>
+                    <div class="bg-[#FFFFFF] flex my-10 w-4/6 ml-0 lg:ml-20">
+                        <div>
+                            <img class="pt-3" src="./assets/residential.png" alt="">
+                        </div>
+                        <div class="pl-6">
+                            <h1 class="font-bold pt-4">Residential</h1>
+                            <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+                        </div>
+                    </div>
+                    
 
-            <div class="pl-20 bg-[#FFFFFF] flex ">
-                <div>
-                    <img class="pt-3" src="./assets/commercial.png" alt="">
-                </div>
-                <div class="pl-6">
-                    <h1 class="font-bold pt-4 w-20">Commercial</h1>
-                    <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
-                </div>
-            </div>
-            <div class="pl-20 bg-[#FFFFFF] flex my-10">
-                <div>
-                    <img class="pt-3" src="./assets/residential.png" alt="">
-                </div>
-                <div class="pl-6">
-                    <h1 class="font-bold pt-4 w-20">Residential</h1>
-                    <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
-                </div>
-            </div>
 
-        </div>
-        
-        
-        <div>
-            <img src="./assets/Rectangle.png" alt="">
-        </div>
-    </div> 
+                </div>
+            
+                <div class="flex-1">
+                    <img class="w-full h-auto object-cover" src="./assets/Rectangle.png" alt="">
+                </div>
+            </div>
+            
         </section>
+        
 
     </main>
 

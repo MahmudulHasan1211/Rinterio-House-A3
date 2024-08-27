@@ -27,6 +27,7 @@
                     colors: {
                         clifford: '#da373d',
                         bgcolor: '#F4F4F4',
+                        
                     }
                 }
             }
@@ -285,13 +286,73 @@
             <div class="border rounded-xl px-4 py-4 flex justify-center md:justify-start ">
                 <img src="./assets/img5.png" alt="">
             </div>
-            
         </div>
-
         </section>
 
+        <section class="my-20 ">
+            <div class="flex flex-col md:flex-row bg-gradient-to-b from-bgcolor to-white mx-auto p-4 px-10 py-8">
+                <!-- Text Content -->
+                <div class="mb-6 md:mb-0 md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-4">Reviews</h1>
+                    <p class="text-xl font-bold md:text-5xl mb-6">Over 100,000 designs completed for happy clients.</p>
+                    <a class="btn text-black bg-white border-none inline-flex items-center">
+                        See All Reviews
+                        <i class="fa-solid fa-arrow-right rounded-full bg-[#ABEF5F] text-black p-2 ml-2"></i>
+                    </a>
+                </div>
+        
+                <!-- Cards -->
+                <div class="flex flex-col md:flex-row md:space-x-4">
+                    <div class="card bg-base-100 image-full w-full md:w-96 shadow-xl mb-6 md:mb-0">
+                        <figure class="relative">
+                            <img src="./assets/article1.png" alt="Shoes" class="opacity-50" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">by vittoria</h2>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input
+                                  type="radio"
+                                  name="rating-2"
+                                  class="mask mask-star-2 bg-orange-400"
+                                  checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                            
+                            <p>Amid the COVID crisis, the project came to a standstill with confusion in the final design. After the lockdown 3 managers left, with the project unfinished. Then Sai Krishna came as project manager. With his patience and perseverance, he worked...</p>
+                        </div>
+                    </div>
+        
+                    <div class="card bg-base-100 image-full w-full md:w-96 shadow-xl">
+                        <figure class="relative">
+                            <img src="./assets/article3.png" alt="Shoes" class="opacity-50" />
+                        </figure>
+                        
+                        <div class="card-body">
+                            <h2 class="card-title">by adi</h2>
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input
+                                  type="radio"
+                                  name="rating-2"
+                                  class="mask mask-star-2 bg-orange-400"
+                                  checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              </div>
+                            <p>It was really good to get my home interior done by Rentario and was really great to get it completed before 8 days of actual handover date...Good Job Guys...Really appreciate Saarim and the team for their hard work and dedication...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
         <!-- read our article section  -->
-        <section class="bg-[url('./assets/bg.jpg')] bg-cover bg-center h-screen">
+        <section class=" bg-[url('./assets/bg.jpg')] bg-cover bg-center h-screen">
             <div class="flex flex-col items-center w-full text-center">
                 <a class="btn text-black rounded-full bg-[#EEFCDF] inline-flex items-center px-4 py-2 mt-16">
                     <i class="fa-solid fa-arrow-right rounded-full text-black p-2"></i>
@@ -328,7 +389,7 @@
             <div class="flex justify-center">
                 <textarea placeholder="Write your message here" class="h-40 my-4 textarea textarea-bordered rounded-xl w-full max-w-md md:px-4"></textarea>
             </div>
-                     
+
             <div class="flex justify-center">
                 <a class="btn text-black rounded-full bg-[#ABEF5F]  flex items-center px-4 py-2 w-full sm:w-80">
                     Send Mail
